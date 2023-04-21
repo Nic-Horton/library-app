@@ -9,13 +9,15 @@ function Book(title, author, pages, read) {
 }
 
 function addToLibrary() {
-	newBook = new Book(
-		prompt('title'),
-		prompt('author'),
-		prompt('pages'),
-		prompt('read')
-	);
+	event.preventDefault();
+	let bookTitle = document.getElementById('title').value;
+	let bookAuthor = document.getElementById('author').value;
+	let bookPages = document.getElementById('pages').value;
+	let bookRead = document.getElementById('read').checked;
+	newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
 	myLibrary.push(newBook);
+	form.reset();
+	closeForm();
 }
 
 function display() {

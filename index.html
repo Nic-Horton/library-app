@@ -18,7 +18,7 @@
 		<header>Digital Library</header>
 		<button id="newBookBtn" onclick="openForm()">+</button>
 		<div class="pop-up" id="bookForm">
-			<form action="" class="form-container">
+			<form action="/script.js" method="get" id="form" class="form-container">
 				<h1>New Book</h1>
 
 				<label for="title">Enter Title</label>
@@ -31,10 +31,11 @@
 				<input type="text" name="pages" id="pages" required />
 
 				<label for="read">Read yet?</label>
-				<input type="hidden" value="Not Read" name="read" />
-				<input type="checkbox" name="read" id="read" value="Read" />
+				<input type="checkbox" name="read" id="read" />
 
-				<button type="submit" class="btn">Submit</button>
+				<button type="submit" class="btn" form="form" onclick="addToLibrary()">
+					Submit
+				</button>
 				<button type="button" class="btn cancel" onclick="closeForm()">
 					Close
 				</button>
