@@ -23,3 +23,14 @@ function display() {
 		console.log(myLibrary[i]);
 	}
 }
+
+const bookShelf = document.getElementsByClassName('bookShelf');
+const newBtn = document.getElementById('newBookBtn');
+
+function openForm() {
+	document.getElementById('bookForm').style.display = 'block';
+}
+
+function closeForm() {
+	document.getElementById('bookForm').style.display = 'none';
+}
