@@ -1,6 +1,7 @@
 let myLibrary = [];
 let newBook;
 
+// Constructor
 function Book(title, author, pages, read) {
 	this.title = title;
 	this.author = 'by ' + author;
@@ -8,6 +9,7 @@ function Book(title, author, pages, read) {
 	this.read = read;
 }
 
+// Adds input from form and enters them into array after they become objects of Book
 function addToLibrary() {
 	event.preventDefault();
 	let bookTitle = document.getElementById('title').value;
@@ -21,6 +23,7 @@ function addToLibrary() {
 	closeForm();
 }
 
+// Displays each array index on HTML
 function display() {
 	const bookShelf = document.getElementById('bookShelf');
 	const books = document.querySelectorAll('.card');
@@ -30,6 +33,7 @@ function display() {
 	}
 }
 
+// Function responsible for tying form input to JavaScript in order to output as HTML
 function createCard(book) {
 	const library = document.querySelector('#bookShelf');
 	const cardDiv = document.createElement('div');
