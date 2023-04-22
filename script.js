@@ -3,8 +3,8 @@ let newBook;
 
 function Book(title, author, pages, read) {
 	this.title = title;
-	this.author = author;
-	this.pages = pages + 'pgs';
+	this.author = 'by ' + author;
+	this.pages = pages + ' pgs';
 	this.read = read;
 }
 
