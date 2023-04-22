@@ -1,62 +1,108 @@
 *{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+body {
+  background-color: #E5D9B6;
 }
 
 header{
-    font-size: 30px;
-    font-weight: 700;
+  color: #5F8D4E;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+#newBookBtn {
+  background-color: #A4BE7B;
+  color: #285430;
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #285430;
+  position: fixed;
+  bottom: 5vh;
+  right: 2vw;
+}
+
+#newBookBtn:hover {
+  background-color: #285430;
+  color: #A4BE7B;
+  border-color: #A4BE7B;
+
 }
 
 .pop-up {
   display: none;
   position: fixed;
+  width: 30vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 3px solid #f1f1f1;
+  border: 3px solid #285430;
   z-index: 9;
 }
 
 .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #A4BE7B;
+}
 
-  }
+h1 {
+  color: #285430;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  .form-container input[type=text] {
-    width: 100%;
-    padding: 15px 0px;
-    margin: 5px 0 20px 0;
-    border: none;
-    background: #f1f1f1;
-  }
+.form-container input[type=text] {
+  width: 100%;
+  padding: 15px 0px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #E5D9B6;
+}
 
-  .form-container input[type=checkbox] {
-    margin: 5px 0 20px 0;
-  }
+label {
+  color: #285430;
+}
 
-  .form-container input[type=text]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
+.check-box-div {
+  margin: 5px 0 20px 0;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  gap: 10px;
+}
 
-  .form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
+.form-container input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
 
-  .form-container .cancel {
-    background-color: red;
-  }
+.form-container input[type=text]:focus {
+  background-color: #d8c68a;
+  outline: none;
+}
 
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+.form-container .btn {
+  background-color: #285430;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
