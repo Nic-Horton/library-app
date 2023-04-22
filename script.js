@@ -1,11 +1,6 @@
 let myLibrary = [];
 let newBook;
 
-// const submitBtn = document.querySelector('#submit');
-// submitBtn.addEventListener('click', () => {
-// 	addToLibrary();
-// });
-
 function Book(title, author, pages, read) {
 	this.title = title;
 	this.author = author;
